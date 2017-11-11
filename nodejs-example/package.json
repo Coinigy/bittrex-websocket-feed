@@ -1,0 +1,28 @@
+{
+  "name": "bittrex-websocket-example",
+  "version": "1.0.0",
+  "description": "Get real-time Bittrex trade data through Coinigy's websocket API.",
+  "main": "bittrex-websocket-example.js",
+  "dependencies": {},
+  "devDependencies": {
+    "socketcluster-client": "^9.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coinigy/bittrex-websocket-feed.git"
+  },
+  "keywords": [
+    "bittrex",
+    "websocket",
+    "coinigy"
+  ],
+  "author": "Coinigy Inc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coinigy/bittrex-websocket-feed/issues"
+  },
+  "homepage": "https://github.com/coinigy/bittrex-websocket-feed#readme"
+}
