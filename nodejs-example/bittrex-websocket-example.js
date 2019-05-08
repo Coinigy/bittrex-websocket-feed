@@ -37,7 +37,7 @@ SCsocket.on('connect', function (status) {
 
 
             // Subscribe to Bittrex Ethereum/Bitcoin market's live websocket trade feed
-            var scChannel = SCsocket.subscribe("WSTRADE-BTRX--ETH--BTC");
+            var scChannel = SCsocket.subscribe("TRADE-BTRX--ETH--BTC");
                         
             scChannel.watch(function (data) {
                 // log output as new messages stream in
@@ -58,7 +58,7 @@ SCsocket.on('connect', function (status) {
         
         } else {
         
-            console.log(err);
+            console.log(`Code: ${err.errorCode}, Msg: ${err.errorMsg}`);
         
         }   
     
