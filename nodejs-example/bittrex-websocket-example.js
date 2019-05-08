@@ -58,7 +58,7 @@ SCsocket.on('connect', function (status) {
         
         } else {
         
-            console.log(err);
+            console.log(`Code: ${err.errorCode}, Msg: ${err.errorMsg}`);
         
         }   
     
