@@ -4,7 +4,9 @@ Get real-time Bittrex trade data through Coinigy's websocket API.
 
 ## Getting Started
 
-This repository contains various source code examples that demonstrate connecting to Coinigy's API in order to obtain real-time Bittrex websockets data. Client libraries are subject to change, please follow the [Socketcluster Github](https://github.com/SocketCluster/socketcluster-client) for latest client releases.
+This repository contains various source code examples that demonstrate connecting to Coinigy's API in order to obtain real-time Bittrex websockets data. Client libraries are subject to change, please follow the [Socketcluster Github](https://github.com/SocketCluster/socketcluster-client) for latest client releases. 
+
+As of 5/8/19 this example was confirmed working with SC Client v10.1.2.
 
 ### Prerequisites
 
@@ -32,21 +34,15 @@ Coinigy's Websocket API operates via a pub/sub (publish/subscribe) model. After 
 
 Channels are in the format: "METHOD-EXCHANGECODE--PRIMARYCURRENCY--SECONDARYCURRENCY"
 
-Live trades are normally streamed via the "TRADE" method, however for Bittrex specifically, please use "WSTRADE".
+Live trades are normally streamed via the "TRADE" method.
 
 Examples:
 ```
 // Real-Time Bittrex Ethereum/Bitcoin Channel
-WSTRADE-BTRX--ETH--BTC
+TRADE-BTRX--ETH--BTC
 
 // Real-Time Bittrex Litecoin/Bitcoin Channel
-WSTRADE-BTRX--LTC--BTC
-
-
-/*
-Legacy Polling (Slower) Bittrex Litecoin/Bitcoin Channel.
 TRADE-BTRX--LTC--BTC
-*/
 ```
 
 
